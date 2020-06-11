@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cena Mágica</title>
+<link rel="icon" type="image/png" href="favic.png" />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Trip  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300,100,500,700,600,900' rel='stylesheet' type='text/css'>
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<script type="text/javascript">
+    function soloLetras(e) {
+        key = e.keyCode || e.which;
+        tecla = String.fromCharCode(key).toLowerCase();
+        letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+        especiales = [8, 37, 39, 46];
+        tecla_especial = false;
+        for (var i in especiales) {
+            if (key == especiales[i]) {
+                tecla_especial = true;
+                break;
+            }
+        }
+        if (letras.indexOf(tecla) == -1 && !tecla_especial)
+            return false;
+    }
+</script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+	<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+		</script>
+</head>
+<body>
+<div class="banner">
+	 <div class="container">
+		 <div class="header">	 
+			 <div class="logo wow fadeInLeft" data-wow-delay="0.5s">
+			 <a href="index.html"><img src="images/logo2.png" alt=""/></a>
+			 </div>	
+			 <div class="top-menu">
+				 <span class="menu"> </span> 
+				 <ul>
+					 <li><a class="scroll" href="#home">Inicio</a></li>
+					 <li><a class="scroll" href="#nosotros">Nosotros</a></li>
+					 <li><a class="scroll" href="#reservar">Reservar</a></li>
+					 <li><a class="scroll" href="#pricing">Itinerario</a></li>
+					 <li><a class="scroll" href="#contact">Contacto</a></li>
+				 </ul>
+			 </div>
+			 <div class="clearfix"> </div>
+			 </div>
+		 <script>					
+					$("span.menu").click(function(){
+						$(".top-menu ul").slideToggle("slow" , function(){
+						});
+					});
+		 </script>
+		 	 <div id="home" class="banner-text wow fadeInUp" data-wow-delay="0.5s">
+		 	  <div id="resultado" name="resultado" class="">hola</div>
+			 <h1>Cena Mágica <span>Teotihuacan</span> 30 de <label>Julio</label></h1>
+			 <h2>En Cena Mágica nuestro compromiso es ofrecerte espectáculos de calidad que superen tus expectativas y te hagan vivir momentos inolvidables.</h2>
+		 </div>
+	</div>
+</div>
+<div id="nosotros" class="nosotros">
+<div class="video">
+	 <div class="container">
+		 <div class="video-text text-center">
+			 <h3><FONT COLOR="white">Cena Mágica</FONT></h3>
+			<p>Esto es un poco de lo que se vive en nuestras cenas mágicas.</p>
+		 </div>
+		 <div class="video-play ">
+			 <div class="playing">				
+				<iframe width="854" height="480" src="https://www.youtube.com/embed/byHWsGiXFpY" frameborder="0" allowfullscreen></iframe>
+			 </div>
+			 
+		 </div>
+	 </div>
+</div>
+</div>
+<div id="reservar" class="reservar">
+<div class="get-started">
+	 <div class="container">
+		 <h4 class="wow bounceInLeft" data-wow-delay="0.5s">¿Estás listo para vivir esta experiencia?</h4>
+		 <h3 class="wow bounceInRight" data-wow-delay="0.5s">Reserva ahora con nosotros y vive esta mágica experiencia.</h3>
+		 <a href="#">Reserva Ahora</a>
+	 </div>
+</div>
+</div>
+<div id="contact" class="contact">
+	 <div class="container">
+		 <div class="contact-text text-center">
+			 <h3>CONTACTO</h3>
+			<p>Si tienes alguna duda, comunícate con nosotros.</p>
+		 </div>
+		  <div class="contact-form">
+				<form id="formContacto" name="formContacto" role="form" method="POST">
+					<div class="col-md-6 text-box">
+						<input required="required" onkeypress="return soloLetras(event);" class="wow fadeInLeft" data-wow-delay="0.5s" id="Nombre" name="Nombre" type="text" placeholder="Nombre" />
+						<input required="required" class="wow fadeInLeft" data-wow-delay="0.5s" id="Email" name="Email" type="text" placeholder="Email" />
+						<input required="required" class="wow fadeInLeft" data-wow-delay="0.5s" id="Asunto" name="Asunto" type="text" placeholder="Asunto" />
+				    </div>
+					 <div class="col-md-6 textarea">
+							<textarea required="required" class="wow fadeInRight" data-wow-delay="0.5s" id="Mensaje" name="Mensaje" placeholder="Mensaje"></textarea>
+							<input class="wow fadeInRight" data-wow-delay="0.5s" type="submit" onclick="enviarDatos();" value="Enviar" />
+					  </div>
+					  <div class="clearfix"> </div>					  
+			  </form>
+		  </div>
+	 </div>	  
+</div>
+<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.3112526974983!2d-98.84184094982841!3d19.699368437136314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ea9c50720feb%3A0x140e1cdbc2234c85!2sTuxpan+208%2C+San+Martin+Centro%2C+55850+San+Mart%C3%ADn+Centro%2C+M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1467083059113" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="footer">
+	 <div class="container">
+		 <div class="ftr-logo">
+			 <a class="wow bounceIn" data-wow-delay="0.5s" href="index.html"><img src="images/logomodif.png" alt=""/></a>
+		 </div>
+		 <br>
+		 <div class="col-lg-4">
+		 	<img width="200px" height="90px" src="images/jaguar.png" alt=""/> 
+		 </div>
+		 <div class="col-lg-4">
+		 	<img width="200px" height="90px" src="images/eventos.png" alt=""/> 
+		 </div>
+		 <div class="col-lg-4">
+		 	<img width="200px" height="90px" src="images/milli.png" alt=""/> 
+		 </div>
+		 <div class="col-lg-2"></div>
+		 <div class="col-lg-4">
+		 	<h5><a class="vinculo" href="https://www.facebook.com/CenaMagicaenTeotihuacan">
+		 	<img width="36px" height="36px" src="images/iconFacebook.png" alt=""/>/CenaMagicaenTeotihuacan</a></h5>
+		 </div>
+		 <div class="col-lg-3">
+		 	<font color="white"><h5><img width="36px" height="36px" src="images/iconWhatts.png" alt=""/> 5544034412</h5></font>
+		 </div>
+		 <div class="col-lg-3"></div>
+		 <br><br>
+		 <div class="copy-right wow bounceInUp col-lg-12" data-wow-delay="0.5s">
+			 <p>Copyright &#169; 2016 Cena Mágica . Todos los derechos reservados.</p>
+		 </div>
+	 </div>
+</div>
+<script>
+function enviarDatos(){
+        $.ajax({
+            type: "POST",
+            url: 'enviarFormulario.php',
+            data: $('#formContacto').serialize(),
+            success: function(data) {
+                $('#resultado').html(data);
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+		$(document).ready(function() {
+		$().UItoTop({ easingType: 'easeOutQuart' });
+});
+</script>
+<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+ </body>
+ </html>
